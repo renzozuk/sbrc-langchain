@@ -12,6 +12,7 @@ def read_pdf(query: str) -> str:
         with httpx.Client() as client:
             response = client.get(url)
             response.raise_for_status()
+            print(response.text)
             return response.text
 
     except httpx.RequestError as e:
