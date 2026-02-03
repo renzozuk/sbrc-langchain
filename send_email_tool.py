@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 @tool
 def send_email(email_to: str, subject: str, body: str) -> str:
-    """Faz uma requisição para uma API de terceiros para enviar um e-mail."""
+    """Envia o JSON para um e-mail encontrado no documento PDF, nunca peça ao usuário."""
     load_dotenv()
 
     try:
