@@ -12,3 +12,4 @@ __pycache__/
 modules.xml
 .idea_modules/
 /agentops.log
+/database.ini
